@@ -1,0 +1,264 @@
+/* par défaut il mettent du padding et du margin et on le met a 0  */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Mise en form générale */
+
+body{
+    background-color:rgb(245,245,245);
+    color: #333;
+    font-family: Arial , Verdana, sans-serif;
+    font-size: 1em;
+    line-height: 1.25;
+}
+
+
+/* Toute les images - on fais en sorte que les images soient responsives*/
+img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* mise en place de lentete*/
+header{
+    color: white;
+    /* background-color: rgba(163, 203, 77, .9);     */
+    padding-bottom: 1px;
+    background: -webkit-linear-gradient(rgb(211, 6, 6), rgb(241, 237, 0), rgb(238, 127, 0));
+}
+
+/*BANNIERE*/
+
+header div{
+    border:  1px solid black;
+    height: 25vh;
+    background-image: url(/img/banner-01.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: center;
+}
+
+
+
+/* Mise en forme de la navigation */
+
+header  ul{
+    text-align: center;
+}
+
+header nav li{
+    margin: 12px;
+    list-style: none;
+    display: inline-block;
+}
+
+/* état normale du lien */
+header nav li a{
+    font-size: 1.4em;
+    font-weight: 600;
+    padding: 7px;
+    color: rgb(255, 255, 255); 
+}
+
+/* état au survole du lien */
+header nav li a:hover{
+    color: rgb(186, 247, 54);
+    background-color: rgba(0, 0, 0, .5);
+    transition: 2s;
+}
+
+/* place une marge de chaque coter de tout les  paragraphes */
+
+  p{
+      margin-bottom: 12px;
+  }
+
+/* mise en forme du MAIN et le centre*/
+
+    main{
+        padding: 24px 18px;
+        max-width: 1024px;
+        margin: 0 auto;
+        background-color: rgb(204, 204, 204);
+    }
+
+main h1{
+    color: #214567;
+    padding-bottom: 24px;
+    border-bottom: 1px dashed #214567;
+    font-size: 2.6em;
+    font-weight: 800;
+    margin-bottom: 24px;
+    text-align: center;
+    background: -webkit-linear-gradient(rgb(211, 6, 6), rgb(241, 237, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main h2{
+    font-size: 1.6em;
+    font-weight: 300;
+    margin-bottom: 18px;
+    color: #fff;
+    /* background-color: #214567; */
+    background: -webkit-linear-gradient(rgb(211, 6, 6), rgb(241, 237, 0));
+    padding: 7px;
+}
+
+main h3{
+    font-size: 1.6em;
+    margin-bottom: 12px;
+}
+
+main article{
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+}
+
+  main p{
+      text-align: justify;
+  }
+
+
+
+  /* mise en place de la gallerie d'images */
+  main figure{
+      margin-bottom: 12px;
+  }
+
+  main  figcaption{
+      color: rgb(242, 242, 242);
+      background-color: #383b3f;
+      padding: 7px;
+      text-align: center;
+      font-style: italic;
+      font-size: 0.9em;
+  }
+
+
+  /* mise en forme du footer */
+  footer{
+      color: rgb(217, 217, 217);
+      background-color: rgb(64,64,64);
+      padding: 24px 18px;
+      text-align: center;
+  }
+
+  footer h3{
+      font-size: 1.2em;
+      margin-bottom: 12px;
+      color: white;
+  }
+
+
+.souligne{
+    text-decoration: underline;
+}
+
+.majuscule{
+    text-transform: uppercase;
+}
+
+/* mise en place de la gallery d'images */
+
+
+@media screen and (min-width: 780px){
+
+    .flexing{
+        display: flex;
+    }
+
+    #gallery{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #gallery figure {
+        width: 47.5%;
+    }
+    
+}
+
+
+
+
+
+/* page contact*/
+
+/* mise en forma du tableau */
+thead{
+    background-color: mediumaquamarine;
+}
+
+table{
+    width: auto;
+    margin: 100px auto;
+    text-align: center;
+    border-collapse: collapse;
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.30);
+    background-color: white;
+}
+
+.overflow{
+    overflow-x: auto;
+}
+
+
+tbody{
+    border-bottom: 1px solid mediumaquamarine;
+}
+
+td, th{
+    padding: 10px ;
+}
+
+
+#msg{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+/* formulaire */
+
+
+textarea{
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+/* mise en forme des boutton du formulaire  */
+
+.boutton{
+    padding: 15px 60px;
+    margin: 0 2px ;
+    background-color: brown;
+    border-radius: 5px;
+    color: cadetblue;
+    font-size: 1.1em;
+}
+
+.boutton:hover{
+    color: white;
+    background-color: rgb(136, 95, 95);
+}
+
+.boutton{
+    text-align: center;
+    display: inline-block;
+}
+
+/* centre les 2 boutton avec une une div qui a la classe .centre */
+
+.centre{
+    margin-left: 40%;
+}  
+
+
+
+
+

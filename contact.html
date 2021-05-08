@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Ceci est mon premier site internet créé lors de ma formation.">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <title>Contact</title>
+    </head>
+    
+    <body>
+        <header>
+            <div>
+                <!-- une image sera mise en css (la banniére) -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" title="Aller à la page">Accueil</a></li>
+                    <li><a href="contact.html" title="Aller à la page">Contact</a></li>
+                    <li><a href="https://www.interface3namur.be" title="Aller sur le site">Interface3.Namur</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Contact</h1>
+            <section>
+                <h2>Horaire</h2>
+                <article>
+                    <h3>Mes disponibilités</h3>
+                <div class="overflow">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Lundi</th>
+                                <th>Mardi</th>
+                                <th>Mercredi</th>
+                                <th>Jeudi</th>
+                                <th>Vendredi</th>
+                                <th>Samedi</th>
+                                <th>Dimanche</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Matin</th>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Non dispo</td>
+                            </tr>
+                            <tr>
+                                <th>Soir</th>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Non dispo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>    
+                </article>
+                <article>
+                    <h2>Formulaire de contact : </h2>
+                    <form action="ploufplouf" method="POST" class="form">
+                        <div>
+                            <label for="email">Votre adresse e-mail : </label>
+                            <input type="email" name="mail" id="mail" placeholder="tuto@tuto.com">
+                        </div>
+                        <div>
+                            <label for="rdv">Je désire prendre renvez-vous le : </label>
+                            <select name="selectJour" id="selectJour">
+                                <optgroup label="Lundi">
+                                    <option value="lundiMatin">Matin</option>
+                                    <option value="lundiSoir">Soir</option>
+                                </optgroup>
+                                <optgroup label="Mardi">
+                                    <option value="mardiMatin">Matin</option>
+                                    <option value="mardiSoir">Soir</option>
+                                </optgroup>
+                                <optgroup label="Mercredi">
+                                    <option value="mercrediMatin">Matin</option>
+                                    <option value="mecrediSoir">Soir</option>
+                                </optgroup>
+                                <optgroup label="Jeudi">
+                                    <option value="jeudiMatin">Matin</option>
+                                    <option value="jeudiSoir">Soir</option>
+                                </optgroup>
+                                <optgroup label="Vendredi">
+                                    <option value="vendrediMatin">Matin</option>
+                                    <option value="vendrediSoir">Soir</option>
+                                </optgroup>
+                                <optgroup label="Samedi">
+                                    <option value="samediMatin">Matin</option>
+                                    <option value="samediSoir">Soir</option>
+                                </optgroup>
+                                <optgroup label="Dimanche">
+                                    <option value="dimancheMatin" disabled>Matin</option>
+                                    <option value="dimancheSoir" disabled>Soir</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="msg">Entrez votre message ici : </label>
+                            </div>
+                            <textarea name="msg" id="msg" cols="130" rows="10" placeholder="votre message..."></textarea>
+                        </div>
+                        <div>
+                            <label for="checkbox">Je m'inscris à la newsletter</label>
+                            <input type="checkbox" name="checkbox" id="checkbox" checked>
+                        </div>
+                        <div>
+                            <label for="fichier">Votre coupon de réduction (.pdf) </label><br>
+                            <input type="file" id="fichier" name="fichier" accept=".pdf">  
+                        </div>
+                        <div class="centre">
+                            <input class="boutton" type="submit" value="Envoyer">
+                            <input class="boutton" type="reset" value="Annulez">
+                        </div>
+                    </form>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <h3 class="souligne majuscule">Informations</h3>
+            <p>Site web pour <strong>Développeur Back-End orienté DATA</strong></p>
+            <p><strong>Florian Lamboray</strong> &copy;2021</p>
+          </footer>
+    </body>
+</html>
